@@ -1,0 +1,189 @@
+{
+    "services": [
+        {
+            "commands": [],
+            "description": "Report parking space information regularly",
+            "events": [],
+            "properties": [
+               {
+                    "dataType": "string",
+                    "max": 0,
+                    "maxLength": 3,
+                    "method": "RE",
+                    "min": 0,
+                    "propertyName": "ProtocolVersion",
+                    "required": true,
+                    "step": 0.0
+                }, {
+                    "dataType": "string",
+                    "max": 0,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": 0,
+                    "propertyName": "MessageID",
+                    "required": true,
+                    "step": 0.0
+                },
+                {
+                    "dataType": "string",
+                    "max": 0,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": 0,
+                    "propertyName": "DeviceID",
+                    "required": true,
+                    "step": 0.0
+                },
+                
+                {
+                    "dataType": "string",
+                    "max": 0,
+                    "maxLength": 10,
+                    "method": "RE",
+                    "min": 0,
+                    "propertyName": "SN",
+                    "required": true,
+                    "step": 0.0
+                },
+               
+                {
+                    "dataType": "int",
+                    "max": -40,
+                    "maxLength": 10,
+                    "method": "RE",
+                    "min": -140,
+                    "propertyName": "SignalStrength",
+                    "required": true,
+                    "step": 1.0
+                },                
+                {
+                    "dataType": "int",
+                    "max": 255,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "SignalCoverageLevel",
+                    "required": true,
+                    "step": 1.0
+                },                
+                {
+                    "dataType": "int",
+                    "max": 255,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "SNR",
+                    "required": true,
+                    "step": 1.0
+                },
+                {
+                    "dataType": "string",
+                    "max": 0,
+                    "maxLength": 12,
+                    "method": "RE",
+                    "min": 0,
+                    "propertyName": "PCI",
+                    "required": true,
+                    "step": 0.0
+                },
+                {
+                    "dataType": "string",
+                    "max": 0,
+                    "maxLength": 12,
+                    "method": "RE",
+                    "min": 0,
+                    "propertyName": "CellId",
+                    "required": true,
+                    "step": 0.0
+                }, {
+                    "dataType": "int",
+                     "max": 65535,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "DeviceStatus",
+                    "required": true,
+                    "step": 1.0
+                },
+                {
+                    "dataType": "int",
+                    "max": 255,
+                    "maxLength": 3,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "BatteryCapacity",
+                    "required": true,
+                    "step": 1.0
+                },
+                 {
+                    "dataType": "int",
+                     "max": 65535,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "BGMagneticField_X",
+                    "required": true,
+                    "step": 1.0,
+                    "unit": "mGs"
+                },
+                {
+                    "dataType": "int",
+                     "max": 65535,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "BGMagneticField_Y",
+                    "required": true,
+                    "step": 1.0,
+                    "unit": "mGs"
+                },
+                {
+                    "dataType": "int",
+                     "max": 65535,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "BGMagneticField_Z",
+                    "required": true,
+                    "step": 1.0,
+                    "unit": "mGs"
+                },
+                {
+                    "dataType": "int",
+                     "max": 65535,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "CurrentMagneticField_X",
+                    "required": true,
+                    "step": 1.0,
+                    "unit": "mGs"
+                },
+                {
+                    "dataType": "int",
+                     "max": 65535,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "CurrentMagneticField_Y",
+                    "required": true,
+                    "step": 1.0,
+                    "unit": "mGs"
+                },
+                {
+                    "dataType": "int",
+                     "max": 65535,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "CurrentMagneticField_Z",
+                    "required": true,
+                    "step": 1.0,
+                    "unit": "mGs"
+                }
+
+            ],
+            "serviceType": "TimelyReportMessage"
+        }
+    ]
+}

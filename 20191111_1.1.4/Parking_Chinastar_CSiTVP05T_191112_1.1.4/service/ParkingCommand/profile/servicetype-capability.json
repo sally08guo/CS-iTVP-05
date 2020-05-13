@@ -1,0 +1,277 @@
+{
+    "services": [{
+        "serviceType": "ParkingCommand",
+        "description": "The command sent by the host to the terminal",
+        "commands": [{
+            "commandName": "Configuration",
+            "paras": [{
+                "paraName": "NewID",
+                "dataType": "int",
+                "required": true,
+                "min": -1,
+                "max": 65535,
+                "step": 1.0,
+                "maxLength": 5,
+                "unit": null,
+                "enumList": null
+            },
+            {
+                "paraName": "TimelyReportInterval",
+                 "dataType": "int",
+                "required": true,
+                "min": -1,
+                "max": 65535,
+                "step": 1.0,
+                "maxLength": 5,
+                "unit": null,
+                "enumList": null
+            },{
+                "paraName": "TimelySampleInterval",
+                 "dataType": "int",
+                "required": true,
+                "min": -1,
+                "max": 65535,
+                "step": 1.0,
+                "maxLength": 5,
+                "unit": null,
+                "enumList": [5,10,20,65535]
+            },
+            {
+                "paraName": "IPAddress",
+                 "dataType": "string",
+                "required": true,
+                "min": -21474836488,
+                "max": 2147483646,
+                "step": 1,
+                "maxLength": 20,
+                "unit": null,
+                "enumList": null
+            },
+            {
+                "paraName": "Port",
+                 "dataType": "int",
+                "required": true,
+                "min": -1,
+                "max": 65535,
+                "step": 1.0,
+                "maxLength": 5,
+                "unit": null,
+                "enumList": null
+            },
+            {
+                "paraName": "DetectThresholdLevel",
+                 "dataType": "int",
+                "required": true,
+                "min": -1,
+                "max": 255,
+                "step": 1,
+                "maxLength": 3,
+                "unit": null,
+                "enumList": [0,1,2,3,4,255]
+            },
+            {
+                "paraName": "VarOfMagneticFieldWithoutCar",
+                 "dataType": "int",
+                "required": true,
+                "min": -1,
+                "max": 255,
+                "step": 1,
+                "maxLength": 3,
+                "unit": null,
+                "enumList": null
+            },
+            {
+                "paraName": "VarOfMagneticFieldWithCar",
+                 "dataType": "int",
+                "required": true,
+                "min": -1,
+                "max": 255,
+                "step": 1,
+                "maxLength": 3,
+                "unit": null,
+                "enumList": null
+            }
+        ],
+	    "responses": [
+                        {
+                            "responseName": "Configuration_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "string",
+                                    "required": true,
+                                     "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 8,
+                                    "unit": null,
+                                    "enumList": null
+                                 }
+                             ]
+                         }
+                    ]
+        },
+        {
+            "commandName": "Reset",
+            "paras":[{
+                "paraName": "Placeholder",
+                "dataType": "int",
+                 "required": true,
+                  "min": -1,
+                  "max": 65535,
+                   "step": 1,
+                   "maxLength": 5,
+                   "unit": null,
+                   "enumList": [0]
+            }],
+                    "responses": [
+                        {
+                            "responseName": "Reset_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "string",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                 }
+                             ]
+                         }
+                    ]
+        },
+        {
+            "commandName": "ReadBootMessage",
+            "paras":[{
+                "paraName": "Placeholder",
+                "dataType": "int",
+                 "required": true,
+                  "min": -1,
+                  "max": 65535,
+                   "step": 1,
+                   "maxLength": 5,
+                   "unit": null,
+                   "enumList": [0]
+            }],
+                    "responses": [
+                        {
+                            "responseName": "ReadBootMessage_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "string",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                 }
+                             ]
+                         }
+                    ]
+        },
+        {
+            "commandName": "RestoreFactoryDefault",
+            "paras":[{
+                "paraName": "Placeholder",
+                "dataType": "int",
+                 "required": true,
+                  "min": -1,
+                  "max": 65535,
+                   "step": 1,
+                   "maxLength": 5,
+                   "unit": null,
+                   "enumList": [0]
+            }],
+                    "responses": [
+                        {
+                            "responseName": "RestoreFactoryDefault_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "string",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                 }
+                             ]
+                         }
+                    ]
+        },
+        {
+            "commandName": "EnterSleepMode",
+            "paras":[{
+                "paraName": "Placeholder",
+                "dataType": "int",
+                 "required": true,
+                  "min": -1,
+                  "max": 65535,
+                   "step": 1,
+                   "maxLength": 5,
+                   "unit": null,
+                   "enumList": [0]
+            }],
+                    "responses": [
+                        {
+                            "responseName": "EnterSleepMode_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "string",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                 }
+                             ]
+                         }
+                    ]
+        },
+        {
+            "commandName": "SampleBGMagneticField",
+            "paras":[{
+                "paraName": "Placeholder",
+                "dataType": "int",
+                 "required": true,
+                  "min": -1,
+                  "max": 65535,
+                   "step": 1,
+                   "maxLength": 5,
+                   "unit": null,
+                   "enumList": [0]
+            }],
+                    "responses": [
+                        {
+                            "responseName": "SampleBGMagneticField_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "string",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                 }
+                             ]
+                         }
+                    ]
+        }],
+        "properties": [],
+        "events": []
+    }]
+}

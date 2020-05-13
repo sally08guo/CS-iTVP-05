@@ -1,0 +1,185 @@
+{
+    "services": [
+        {
+            "commands": [],
+            "description": "Terminal start up information",
+            "properties": [
+                
+                {
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 3,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "ProtocolVersion",
+                    "required": true,
+                    "step": 0.0
+                },{
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 3,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "versionHW",
+                    "required": true,
+                    "step": 0.0
+                },
+                {
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 10,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "versionSW",
+                    "required": true,
+                    "step": 0.0
+                },{
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "MessageID",
+                    "required": true,
+                    "step": 0.0
+                },
+                {
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "DeviceID",
+                    "required": true,
+                    "step": 0.0
+                },
+                 
+                {
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 10,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "SN",
+                    "required": true,
+                    "step": 0.0
+                },
+                {
+                    "dataType": "int",
+                    "max": 255,
+                    "maxLength": 3,
+                    "method": "RE",
+                    "min": 0,
+                    "propertyName": "DeviceType",
+                    "required": true,
+                    "step": 1.0,
+                    "unit": "s"
+                },
+                
+                {
+                    "dataType": "int",
+                    "max": 255,
+                    "maxLength": 3,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "TimelyReportInterval",
+                    "required": true,
+                    "step": 1.0,
+                    "unit": "s"
+                },
+				 {
+                    "dataType": "int",
+                    "max": 255,
+                    "maxLength": 3,
+                    "method": "RE",
+                    "min": -1,
+                    "propertyName": "TimelySampleInterval",
+                    "required": true,
+                    "step": 1.0,
+                    "unit": "s"
+                },
+				{
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "ResetStatusRegister",
+                    "required": true,
+                    "step": 0.0
+                },
+					{
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "ExceptionIdentificat",
+                    "required": true,
+                    "step": 0.0
+                },
+					{
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "ResetPosit",
+                    "required": true,
+                    "step": 0.0
+                },
+					{
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "VehicleDetectionThresholdLevel",
+                    "required": true,
+                    "step": 0.0
+                },
+				{
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "NoVehicleThreshold",
+                    "required": true,
+                    "step": 0.0
+                },
+					{
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 5,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "HaveVehicleThreshold",
+                    "required": true,
+                    "step": 0.0
+                },
+               {
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 16,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "IMEI",
+                    "required": true,
+                    "step": 0.0
+                },
+               {
+                    "dataType": "string",
+                    "max": null,
+                    "maxLength": 16,
+                    "method": "RE",
+                    "min": null,
+                    "propertyName": "IMSI",
+                    "required": true,
+                    "step": 0.0
+                }
+            ],
+            "serviceType": "BootMessage"
+        }
+    ]
+}

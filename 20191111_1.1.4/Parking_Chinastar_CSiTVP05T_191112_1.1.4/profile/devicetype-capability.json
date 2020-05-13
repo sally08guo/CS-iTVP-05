@@ -1,0 +1,28 @@
+{
+    "devices": [
+        {
+            "deviceType": "Parking",
+            "manufacturerId": "Chinastar",
+            "manufacturerName": "Chinastar",
+            "model": "CSiTVP05T",
+            "protocolType": "CoAP",
+            "serviceTypeCapabilities": [
+                {
+                    "option": "",
+                    "serviceId": "BootMessage",
+                    "serviceType": "BootMessage"
+                },
+                {
+                    "option": "",
+                    "serviceId": "ParkingCommand",
+                    "serviceType": "ParkingCommand"
+                },
+                {
+                    "option": "",
+                    "serviceId": "TimelyReportMessage",
+                    "serviceType": "TimelyReportMessage"
+                }
+            ]
+        }
+    ]
+}
